@@ -1,0 +1,22 @@
+/*Styling for the main image after the navbar*/
+.midimage {
+  position: relative;
+  margin-bottom: 18px;
+  line-height: 1;
+  box-shadow: 0 4px 4px #7d7d7d;
+}
+
+.midimage-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 15px 5px;
+  background: #333333;
+}
+
+.midimage-caption h4,
+.midimage-caption p {
+  color: #ffffff;
+}
+

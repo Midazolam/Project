@@ -1,0 +1,103 @@
+/*This makes the listed parts of the page behave like block elements. I am pretty sure they all do this by default, but just in case*/
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/*below are the css atributes to cause the styling of links (or anchors) to change when when we hover over them or they are focused on*/
+a {
+  color: #A8BF75;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5d7c3f;
+  text-decoration: underline;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/*Some default styling for images. We will add more styling for images later as we need them, these are just defaults*/
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/*Main body css, will apply to most content unless overwritten*/
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  background: #f5f5f5 url(../img/gradient.png) repeat top center;
+}
+
+p {
+  margin: 0 0 9px;
+  color: #676563;
+}
+
+p small {
+  font-size: 11px;
+  color: #999999;
+}
+
+/*Styling the hr is very useful. It's such an easy way to format a page, and it looks nice if you style it appropriatly*/
+hr {
+  margin: 18px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+}
+
+/*The below are classes that we are creating (not predefined in html)*/
+/*This is a nice little formatting trick I found here http://css-tricks.com/snippets/css/clear-fix/ */
+.row {
+  margin-left: -20px;
+  margin-top: 25px;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}
+
+/*There will probably be some redundant container classes by the end of the project. We should read through after and delete them for efficency*/
+/*This next class wraps everything. It will tell a browser how to display the page on very wide displays. (keep the main content a fixed width but let the title and navbar move to sides)*/
+.container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 940px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Here's that clearfix hack again*/
+.container:before,
+.container:after {
+  display: table;
+  content: "";
+}
+
+.container:after {
+  clear: both;
+}
+
+
+

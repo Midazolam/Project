@@ -1,0 +1,124 @@
+
+/*These are some preset span classes that I include in every webpage I design, whether I use them or not.
+ They are handy to have preprepared.*/
+
+.span12 {
+  width: 940px;
+}
+
+.span11 {
+  width: 860px;
+}
+
+.span10 {
+  width: 780px;
+}
+
+.span9 {
+  width: 700px;
+}
+
+.span8 {
+  width: 620px;
+}
+
+.span7 {
+  width: 540px;
+}
+
+.span6 {
+  width: 460px;
+}
+
+.span5 {
+  width: 380px;
+}
+
+.span4 {
+  width: 300px;
+}
+
+.span3 {
+  width: 220px;
+}
+
+.span2 {
+  width: 140px;
+}
+
+.span1 {
+  width: 60px;
+}
+
+/*This next bit is a little different from how we might have done it in class. It's very importanit to the formatting of the page. Delete it and see what happens*/
+/*The syntax of the selector is a little strange. Basically what it's doing, is applying these rules to all our above span classes.
+It's easier than having to type it into each individual div, or into the div containing each paragraph of text on the page*/ 
+[class*="span"] {
+  float: left;
+  margin-left: 20px;
+}
+
+/*Similar to the premades spans, I include these in every webpage I build */
+/*It's an easy way to push elements away from the left edge of something (a float or the edge of the page)*/
+
+.offset12 {
+  margin-left: 980px;
+}
+
+.offset11 {
+  margin-left: 900px;
+}
+
+.offset10 {
+  margin-left: 820px;
+}
+
+.offset9 {
+  margin-left: 740px;
+}
+
+.offset8 {
+  margin-left: 660px;
+}
+
+.offset7 {
+  margin-left: 580px;
+}
+
+.offset6 {
+  margin-left: 500px;
+}
+
+.offset5 {
+  margin-left: 420px;
+}
+
+.offset4 {
+  margin-left: 340px;
+}
+
+.offset3 {
+  margin-left: 260px;
+}
+
+.offset2 {
+  margin-left: 180px;
+}
+
+.offset1 {
+  margin-left: 100px;
+}
+
+/*These are just extra bits I needed for last minute changes*/
+
+.contactfloata {
+  float:left;
+  width:200px;
+  padding-top:15px;
+ }
+
+.contactfloatb {
+  float:right;
+  width:200px;
+  padding-top:15px;
+}

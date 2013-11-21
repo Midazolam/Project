@@ -1,0 +1,86 @@
+/*The following css is used to style the navigation bar at the top of the page. I use something like this in most webpages.*/
+
+.navbar {
+  *position: relative;
+  *z-index: 2;
+  margin-bottom: 18px;
+  overflow: visible;
+  min-height: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: auto;
+}
+
+.navanch {
+  display: block;
+  float: left;
+  padding: 16px 20px 12px;
+  margin-left: -20px;
+  font-size: 50px;
+  font-weight: 200;
+  line-height: 1;
+  color: #c5bfb3;
+  opacity: 0.6;
+  font-family: 'Lato', sans-serif;
+}
+
+/*We're using Colm's idea of floating the whole top bar left. The we float a div right and inside that div, there are the individual navbar objects 
+that are all being floated left*/
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 10px 10px 0 0;
+}
+
+/*floating the div containing the list block right*/
+.navbar .nav.pull-right {
+  float: right;
+}
+
+/*Floating the list items left*/
+.navbar .nav > li {
+  display: block;
+  float: left;
+}
+
+/*Styling for the font of the navbar text*/
+.navbar .nav > li > a {
+  float: none;
+  margin: 25px 10px 5px;
+  padding: 5px;
+  font-size: 18px;
+  line-height: 19px;
+  margin-left: 20px;
+  color: #999999;
+  border: none;
+  background-image: url("../img/color.jpg");
+  background-size: 100%;
+  background-position: -200px -10px;
+  background-repeat: no-repeat;
+  font-family: 'Lato', sans-serif;
+}
+
+/*These are pseudo-selectors. They are what cause the green box to appear when you hover over it and what causes the green box to stay on the active nav item*/
+.navbar .nav > li > a:hover {
+  color: #fff;
+  background-position: 0 0;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: 'Lato', sans-serif;
+}
+.navbar .nav .active > a {
+  text-decoration: none;
+  color: #fff;
+  background-position: 0 0;
+  background-image: url("../img/color.jpg");
+  background-size: 100%;
+}
+
+
+
+
+/*End of navbar*/
+
+
